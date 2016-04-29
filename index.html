@@ -16,24 +16,20 @@
 		<script type="text/javascript" src="./marked.min.js"></script>
 		<script type="text/javascript" src="./main.js"></script>
 
-		<title>Markdedjs Live Preview</title>
+		<title>Markedjs Live Preview</title>
 	</head>
 	<body>
 
 		<div id="header">
-			<h1>Markdedjs Live Preview</h1>
+			<h1>Markedjs Live Preview</h1>
+			You <em>must</em> replace new lines with <code>\n</code>. Line breaks will otherwise not show up when rendered with markedjs.
+			<br>Uses <a href="https://help.github.com/categories/writing-on-github/">Github-flavored</a> markdown.
 		</div>
 
 		<div id="container">
 			<div id="content" class="section">
-				<div id="edit" class="mode">
-					<ul class="submenu">
-						<a href="javascript:void(null);" id="clearButton"><li>clear</li></a>
-					</ul>
-
-					<div class="content">
-						<div id="markdown" style="overflow: hidden; word-wrap: break-word; resize: none; height: 400px;" contenteditable="true"></div>
-					</div>
+				<div class="content mode" style="flex:1">
+					<textarea id="markdown" style="overflow: hidden; word-wrap: break-word; resize: none; height: 400px;"></textarea>
 				</div>
 
 				<div id="preview" class="mode">

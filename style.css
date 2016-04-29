@@ -34,14 +34,23 @@ img {
 }
 
 #header {
+  color: #fff;
   padding: 10px 0 ;
   background-color: #444;
   width: 100%;
   text-align: center;
 }
 
+#header a:link,
+#header a:visited,
+#header a:hover
+#header a:active {
+  color: #7FDBFF;
+  text-decoration: none;
+}
+
 #header h1 {
-  color: #fff;
+  font-size: 20px;
 }
 
 #container {
@@ -57,6 +66,10 @@ img {
 
 #container .section {
   margin-bottom: 20px;
+}
+
+#content {
+  display: flex;
 }
 
 #content .mode {
@@ -89,7 +102,7 @@ img {
   text-decoration: underline;
 }
 
-#content .mode .content {
+.content {
   padding: 10px;
 }
 
@@ -119,8 +132,6 @@ img {
 }
 
 #markdown {
-  font-family: monospace;
-  white-space: pre;
   padding: 0;
   margin: 0;
   width: 100%;
